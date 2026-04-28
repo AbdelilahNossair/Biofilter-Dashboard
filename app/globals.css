@@ -1,14 +1,14 @@
 *{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --green-900:#14532d;--green-800:#166534;--green-700:#15803d;
-  --green-600:#16a34a;--green-500:#22c55e;--green-400:#4ade80;
-  --green-300:#86efac;--green-200:#bbf7d0;--green-100:#dcfce7;--green-50:#f0fdf4;
+  --green-900:#0c0c0e;--green-800:#151518;--green-700:#1f1f24;
+  --green-600:#2a2a31;--green-500:#4b1829;--green-400:#7a233f;
+  --green-300:#b06a83;--green-200:#ead6df;--green-100:#f6ecf1;--green-50:#fdf8fa;
   --warm-50:#faf9f7;--warm-100:#f5f4f1;--warm-200:#ebe9e5;--warm-300:#d9d6d0;
   --warm-400:#b0aba3;--warm-500:#8a847c;--warm-600:#6b655d;--warm-700:#4a453e;
   --warm-800:#2d2a26;--warm-900:#1c1a17;
   --amber-500:#f59e0b;--amber-400:#fbbf24;--amber-600:#d97706;
   --red-500:#ef4444;--red-100:#fee2e2;
-  --surface:#ffffff;--bg:#f4f3f0;
+  --surface:#ffffff;--bg:#ffffff;
   --sidebar-w:260px;
   --radius:20px;--radius-lg:24px;--radius-sm:14px;--radius-xs:10px;
   --shadow:0 1px 3px rgba(0,0,0,0.02), 0 4px 16px rgba(0,0,0,0.04);
@@ -111,13 +111,13 @@ body{background:var(--bg);color:var(--warm-800);font-family:'Plus Jakarta Sans',
 .speed-group{display:flex;background:var(--warm-100);border-radius:10px;padding:3px;gap:2px;}
 .speed-btn{background:none;border:none;cursor:pointer;font-size:12px;font-weight:700;color:var(--warm-500);padding:6px 14px;border-radius:8px;font-family:inherit;transition:all .2s;}
 .speed-btn:hover{color:var(--warm-700);}
-.speed-btn.active{background:var(--surface);color:var(--green-800);box-shadow:0 1px 4px rgba(0,0,0,0.08);}
+.speed-btn.active{background:var(--surface);color:var(--green-500);box-shadow:0 1px 4px rgba(0,0,0,0.08);}
 
 /* Slider strip */
 .slider-strip{padding:10px 40px;background:var(--surface);border-bottom:1px solid var(--warm-200);}
 .step-slider{width:100%;height:4px;border-radius:4px;appearance:none;background:var(--warm-200);cursor:pointer;outline:none;}
-.step-slider::-webkit-slider-thumb{appearance:none;width:16px;height:16px;border-radius:50%;background:var(--green-700);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.15);}
-.step-slider::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--green-700);cursor:pointer;border:2px solid #fff;}
+.step-slider::-webkit-slider-thumb{appearance:none;width:16px;height:16px;border-radius:50%;background:var(--green-800);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.15);}
+.step-slider::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--green-800);cursor:pointer;border:2px solid #fff;}
 
 /* ===================== CONTENT ===================== */
 .content{padding:32px 40px 56px;flex:1;}
@@ -128,9 +128,9 @@ body{background:var(--bg);color:var(--warm-800);font-family:'Plus Jakarta Sans',
 .btn-primary{
   display:inline-flex;align-items:center;gap:8px;background:var(--green-800);color:#fff;
   font-size:13px;font-weight:700;padding:11px 24px;border-radius:12px;border:none;cursor:pointer;
-  font-family:inherit;transition:all .2s;box-shadow:0 2px 8px rgba(20,83,45,0.2);
+  font-family:inherit;transition:all .2s;box-shadow:0 2px 8px rgba(139,30,63,0.25);
 }
-.btn-primary:hover{background:var(--green-700);box-shadow:0 4px 14px rgba(20,83,45,0.3);}
+.btn-primary:hover{background:var(--green-700);box-shadow:0 4px 14px rgba(0,0,0,0.25);}
 .btn-primary.warning{background:var(--amber-600);box-shadow:0 2px 8px rgba(217,119,6,0.2);}
 .btn-primary.warning:hover{background:var(--amber-500);}
 .btn-outline{
@@ -147,8 +147,8 @@ body{background:var(--bg);color:var(--warm-800);font-family:'Plus Jakarta Sans',
   box-shadow:var(--shadow);transition:all .3s ease;position:relative;overflow:hidden;
 }
 .stat:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);}
-.stat-green{background:var(--green-800);color:#fff;box-shadow:0 4px 20px rgba(20,83,45,0.25);}
-.stat-green:hover{box-shadow:0 8px 30px rgba(20,83,45,0.35);}
+.stat-green{background:var(--green-800);color:#fff;box-shadow:0 4px 20px rgba(0,0,0,0.22);}
+.stat-green:hover{box-shadow:0 8px 30px rgba(0,0,0,0.3);}
 .stat-green .stat-label{color:rgba(255,255,255,0.7);}
 .stat-green .stat-val{color:#fff;}
 .stat-green .stat-sub{color:rgba(255,255,255,0.6);}
@@ -251,7 +251,7 @@ canvas{max-width:100%;}
 .toast{
   pointer-events:all;
   display:flex;align-items:flex-start;gap:12px;
-  background:#fff;border-radius:14px;
+  background:var(--surface);border-radius:14px;
   box-shadow:0 8px 32px rgba(0,0,0,0.13),0 2px 8px rgba(0,0,0,0.07);
   border-left:4px solid var(--amber-500);
   padding:14px 16px 10px;width:320px;

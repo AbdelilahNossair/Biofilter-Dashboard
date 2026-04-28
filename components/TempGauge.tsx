@@ -5,8 +5,8 @@ interface Props { value: number }
 
 export default function TempGauge({ value }: Props) {
   const getColor = (t: number) => {
-    if (t < 15) return "#166534";
-    if (t <= 30) return "#16a34a";
+    if (t < 15) return "#7a233f";
+    if (t <= 30) return "#151518";
     return "#ef4444";
   };
   const color = getColor(value);

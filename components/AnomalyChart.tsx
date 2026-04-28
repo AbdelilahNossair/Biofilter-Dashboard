@@ -7,7 +7,7 @@ interface Row { Time_Step: number; Anomaly_Score: number; [k: string]: number }
 interface Props { data: Row[] }
 
 const tooltipStyle = {
-  backgroundColor: "#14532d",
+  backgroundColor: "#1a0a0f",
   border: "none",
   borderRadius: 12,
   fontSize: 12,

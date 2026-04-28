@@ -7,7 +7,7 @@ interface Row { Time_Step: number; Head_Loss: number; [k: string]: number }
 interface Props { data: Row[] }
 
 const tooltipStyle = {
-  backgroundColor: "#14532d",
+  backgroundColor: "#1a0a0f",
   border: "none",
   borderRadius: 12,
   fontSize: 12,
@@ -36,8 +36,8 @@ export default function HeadLossChart({ data }: Props) {
           <AreaChart data={chartData} margin={{ top: 5, right: 16, bottom: 20, left: 8 }}>
             <defs>
               <linearGradient id="greenFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="rgba(22,163,74,0.22)" />
-                <stop offset="100%" stopColor="rgba(22,163,74,0.01)" />
+                <stop offset="0%" stopColor="rgba(139,30,63,0.28)" />
+                <stop offset="100%" stopColor="rgba(139,30,63,0.01)" />
               </linearGradient>
               <linearGradient id="amberFill" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="rgba(245,158,11,0.28)" />
@@ -62,7 +62,7 @@ export default function HeadLossChart({ data }: Props) {
               strokeWidth={2}
               label={{ value: "Maintenance Required", position: "insideTopRight", fill: "#d97706", fontSize: 11, fontWeight: 700 }}
             />
-            <Area type="monotone" dataKey="below" stroke="#16a34a" strokeWidth={2.5} fill="url(#greenFill)" />
+            <Area type="monotone" dataKey="below" stroke="#8b1e3f" strokeWidth={2.5} fill="url(#greenFill)" />
             <Area type="monotone" dataKey="above" stroke="#f59e0b" strokeWidth={2.5} fill="url(#amberFill)" connectNulls={false} />
           </AreaChart>
         </ResponsiveContainer>

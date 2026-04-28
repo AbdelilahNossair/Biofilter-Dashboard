@@ -7,7 +7,7 @@ export default function PhGauge({ value }: Props) {
   const getColor = (pH: number) => {
     if (pH < 6 || pH > 9) return "#ef4444";
     if (pH < 7 || pH > 8) return "#f59e0b";
-    return "#16a34a";
+    return "#151518";
   };
   const color = getColor(value);
   const pct = (value / 14) * 100;

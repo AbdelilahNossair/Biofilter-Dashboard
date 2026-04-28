@@ -267,7 +267,7 @@ export default function Dashboard() {
                   unit="%"
                   status={health < 50 ? "Warning" : "Normal"}
                   sparkData={sparkWindow.map((d) => (1 - d.Anomaly_Score) * 100)}
-                  color="#4ade80"
+                  color="#7a233f"
                   variant="green"
                 />
                 <KpiCard
@@ -276,7 +276,7 @@ export default function Dashboard() {
                   unit="m"
                   status={current.Head_Loss > 1.5 ? "Warning" : "Normal"}
                   sparkData={sparkWindow.map((d) => d.Head_Loss)}
-                  color="#15803d"
+                  color="#1f1f24"
                 />
                 <KpiCard
                   label="Flow Rate"
@@ -284,7 +284,7 @@ export default function Dashboard() {
                   unit="L/min"
                   status="Normal"
                   sparkData={sparkWindow.map((d) => d.Flow_Rate)}
-                  color="#16a34a"
+                  color="#4b1829"
                 />
                 <KpiCard
                   label="Anomaly Score"
